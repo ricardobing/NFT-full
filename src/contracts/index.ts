@@ -1,6 +1,6 @@
-import DemoNFT from '../../../artifacts/contracts/DemoNFT.sol/DemoNFT.json';
-import NFTStaking from '../../../artifacts/contracts/NFTStaking.sol/NFTStaking.json';
-import RewardToken from '../../../artifacts/contracts/RewardToken.sol/RewardToken.json';
+import DemoNFT from '../../artifacts/contracts/DemoNFT.sol/DemoNFT.json';
+import NFTStaking from '../../artifacts/contracts/NFTStaking.sol/NFTStaking.json';
+import RewardToken from '../../artifacts/contracts/RewardToken.sol/RewardToken.json';
 
 export const DEMO_NFT_ABI = DemoNFT.abi;
 export const NFT_STAKING_ABI = NFTStaking.abi;
