@@ -67,10 +67,8 @@ npx hardhat --config hardhat.config.cjs run scripts/deploy.js --network sepolia
 *Nota: El script configurará automáticamente los permisos de minting para el contrato de Staking.*
 
 ### 4. Frontend Setup
-Copia las direcciones de los contratos desplegados en `frontend/src/contracts/index.ts` y luego:
+Copia las direcciones de los contratos desplegados en `src/contracts/index.ts` y luego:
 ```bash
-cd frontend
-npm install
 npm run dev
 ```
 
