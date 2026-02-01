@@ -87,7 +87,7 @@ export default function StakingPage() {
                     <h1 className="text-4xl font-black tracking-tight uppercase italic text-blue-500">STAKING VAULT</h1>
                     <p className="text-slate-400 mt-2 font-medium">Earn daily passive income by locking your unique digital assets.</p>
                 </div>
-                <div className="bg-gradient-to-br from-blue-600/20 to-purple-600/10 border border-blue-500/30 px-8 py-5 rounded-3xl flex items-center gap-6 backdrop-blur-xl shadow-2xl shadow-blue-900/20 group hover:border-blue-400/50 transition-all duration-500">
+                <div className="bg-linear-to-br from-blue-600/20 to-purple-600/10 border border-blue-500/30 px-8 py-5 rounded-3xl flex items-center gap-6 backdrop-blur-xl shadow-2xl shadow-blue-900/20 group hover:border-blue-400/50 transition-all duration-500">
                     <div className="bg-blue-600 p-4 rounded-2xl shadow-lg shadow-blue-600/40 group-hover:scale-110 transition-transform">
                         <Coins size={32} className="text-white" />
                     </div>
@@ -177,7 +177,7 @@ function NFTCard({ id, onAction, actionLabel, variant = 'blue', isLoading }: { i
             </div>
 
             <div className="flex flex-col space-y-5">
-                <div className="aspect-square bg-gradient-to-br from-slate-900 to-black rounded-[2rem] overflow-hidden border border-white/10 relative group-hover:scale-[1.02] transition-transform duration-500">
+                <div className="aspect-square bg-linear-to-br from-slate-900 to-black rounded-4xl overflow-hidden border border-white/10 relative group-hover:scale-[1.02] transition-transform duration-500">
                     <img
                         src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${id}`}
                         alt={`NFT #${id}`}
@@ -187,7 +187,7 @@ function NFTCard({ id, onAction, actionLabel, variant = 'blue', isLoading }: { i
                 </div>
 
                 <div className="flex flex-col space-y-1">
-                    <span className="text-[10px] text-slate-500 font-bold uppercase tracking-[0.1em]">Unit Designation</span>
+                    <span className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Unit Designation</span>
                     <span className="text-xl font-black text-slate-100 tracking-tight italic uppercase">DNFT Proto-{id.toString().padStart(3, '0')}</span>
                 </div>
 

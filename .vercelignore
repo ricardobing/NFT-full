@@ -1,0 +1,10 @@
+cache
+artifacts/build-info
+node_modules
+.env
+.env.local
+hardhat.config.cjs
+scripts
+test
+*.log
+.git

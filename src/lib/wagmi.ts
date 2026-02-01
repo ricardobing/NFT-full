@@ -2,7 +2,8 @@ import { http, createConfig } from 'wagmi'
 import { sepolia } from 'wagmi/chains'
 import { getDefaultConfig } from '@rainbow-me/rainbowkit'
 
-const projectId = 'YOUR_PROJECT_ID' // Demo project id
+// Use environment variable or fallback to demo project id
+const projectId = process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || 'a01e2f3b4c5d6e7f8g9h0i1j2k3l4m5n' // Demo fallback
 
 export const config = getDefaultConfig({
     appName: 'NFT Staking Demo',

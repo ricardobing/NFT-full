@@ -57,7 +57,7 @@ export default function Home() {
         </div>
         <h1 className="text-6xl md:text-8xl font-black tracking-tight leading-[0.9] italic">
           GENERATE. <br />
-          <span className="bg-gradient-to-r from-white via-blue-400 to-purple-500 bg-clip-text text-transparent">LOCK. EARN.</span>
+          <span className="bg-linear-to-r from-white via-blue-400 to-purple-500 bg-clip-text text-transparent">LOCK. EARN.</span>
         </h1>
         <p className="text-slate-400 text-lg md:text-2xl font-medium max-w-2xl mx-auto leading-relaxed">
           The most advanced NFT staking demo. Secure your units in the vault and generate yields with extreme rarity multipliers.
@@ -82,9 +82,9 @@ export default function Home() {
       </div>
 
       <div className="relative group perspective-1000">
-        <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-[3rem] blur-2xl opacity-20 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
+        <div className="absolute -inset-4 bg-linear-to-r from-blue-600 to-purple-600 rounded-[3rem] blur-2xl opacity-20 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
         <div className="relative bg-[#0a0a0c] p-12 rounded-[3rem] border border-white/10 flex flex-col items-center space-y-10 shadow-2xl backdrop-blur-3xl transform transition-transform duration-500 group-hover:rotate-x-2 group-hover:rotate-y-2">
-          <div className="w-64 h-64 rounded-[2.5rem] bg-gradient-to-br from-slate-900 to-black p-1">
+          <div className="w-64 h-64 rounded-[2.5rem] bg-linear-to-br from-slate-900 to-black p-1">
             <div className="w-full h-full rounded-[2.2rem] bg-slate-950 overflow-hidden relative border border-white/5 shadow-inner">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
