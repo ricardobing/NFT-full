@@ -1,6 +1,6 @@
 'use client';
 
-import { useAccount, useReadContract, useWriteContract, useWaitForTransactionReceipt } from 'wagmi';
+import { useAccount, useReadContract } from 'wagmi';
 import { DEMO_NFT_ABI, DEMO_NFT_ADDRESS, NFT_STAKING_ABI, NFT_STAKING_ADDRESS, REWARD_TOKEN_ABI, REWARD_TOKEN_ADDRESS } from '@/contracts';
 import { formatEther } from 'viem';
 

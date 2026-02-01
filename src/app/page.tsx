@@ -6,6 +6,7 @@ import { DEMO_NFT_ABI, DEMO_NFT_ADDRESS } from '@/contracts';
 import { useNFTData, useTokenBalance } from '@/hooks/useWeb3';
 import { useState, useEffect } from 'react';
 import { Loader2, Zap, Rocket, Shield, Trophy, Fingerprint } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Home() {
   const { isConnected } = useAccount();
@@ -23,8 +24,11 @@ export default function Home() {
 
   useEffect(() => {
     if (isSuccess) {
-      setIsMinting(false);
-      refetchTokens?.();
+      const timer = setTimeout(() => {
+        setIsMinting(false);
+        refetchTokens?.();
+      }, 0);
+      return () => clearTimeout(timer);
     }
   }, [isSuccess, refetchTokens]);
 
@@ -86,11 +90,12 @@ export default function Home() {
         <div className="relative bg-[#0a0a0c] p-12 rounded-[3rem] border border-white/10 flex flex-col items-center space-y-10 shadow-2xl backdrop-blur-3xl transform transition-transform duration-500 group-hover:rotate-x-2 group-hover:rotate-y-2">
           <div className="w-64 h-64 rounded-[2.5rem] bg-linear-to-br from-slate-900 to-black p-1">
             <div className="w-full h-full rounded-[2.2rem] bg-slate-950 overflow-hidden relative border border-white/5 shadow-inner">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <Image
                 src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${totalSupply}`}
                 alt="NFT Preview"
-                className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000"
+                fill
+                priority
+                className="object-cover transform group-hover:scale-110 transition-transform duration-1000"
               />
               <div className="absolute top-2 right-2 flex gap-1">
                 <div className="w-1 h-1 rounded-full bg-blue-500 animate-ping" />

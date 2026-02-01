@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/providers/Web3Provider";
 import { CustomConnectButton } from "@/components/ConnectButton";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,8 +28,8 @@ export default function RootLayout({
                 <span className="font-bold text-xl tracking-tight">NFT STAKING</span>
               </div>
               <div className="flex items-center gap-6">
-                <a href="/" className="hover:text-blue-400 transition-colors">Mint</a>
-                <a href="/staking" className="hover:text-blue-400 transition-colors">Staking</a>
+                <Link href="/" className="hover:text-blue-400 transition-colors">Mint</Link>
+                <Link href="/staking" className="hover:text-blue-400 transition-colors">Staking</Link>
                 <div id="connect-button-container">
                   <CustomConnectButton />
                 </div>
